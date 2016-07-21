@@ -3,7 +3,7 @@ build:
   steps:
     - script:
         name: initialize git submodules
-        code: git submodule update --init --recursive
+        code: git submodule init
     - arjen/hugo-build:
         theme: hugo-uno
         flags: --buildDrafts=false
@@ -16,3 +16,4 @@ deploy:
         repo: mm-git/mm-git.github.io
         branch: gh-pages
         basedir: public
+
