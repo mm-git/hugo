@@ -4,6 +4,7 @@ title = "CODE HOUSE"
 author = "Motoyasu Meguro"
 copyright = "&copy; 2016 code-house.jp"
 theme = "hugo-uno"
+canonifyurls = true
 
 [Params]
 description = "I'm Motoyasu, freelance software engineer."
