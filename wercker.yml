@@ -20,6 +20,6 @@ deploy:
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
         repo: mm-git/mm-git.github.io
-        branch: gh-pages
+        branch: master
         basedir: public
 
