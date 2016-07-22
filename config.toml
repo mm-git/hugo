@@ -5,6 +5,7 @@ author = "Motoyasu Meguro"
 copyright = "Powered by Hugo. Copyright © 2016 code-house.jp"
 theme = "hugo-uno"
 canonifyurls = true
+hasCJKLanguage = true
 pygmentscodefences = true
 pygmentsstyle = "solarizedlight"
 
