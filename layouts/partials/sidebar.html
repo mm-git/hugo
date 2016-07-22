@@ -30,7 +30,10 @@
                             {{ if .Site.Params.cv }}<li class="navigation__item"><a href="{{ .Site.Params.cv  }}" title="link to my CV " class="blog-button">CV</a> </li></br> {{ end }}
                             {{ if .Site.Params.legalnotice }}<li class="navigation__item"><a href="{{ .Site.Params.legalnotice  }}" title="link to the legal notice " class="blog-button">Legal notice</a> </li></br> {{ end }}
                        </ul>
-                    </nav><br/> {{ partial "social.html" . }} </div>
+                    </nav>
+                    <br/> {{ partial "social.html" . }}
+                </div>
+                {{ if .Site.Copyright }}<p class="panel-cover__copyright">{{ .Site.Copyright }}</p>{{ end }}
             </div>
         </div>
         <div class="panel-cover--overlay"></div>
@@ -64,7 +67,10 @@
                                 {{ if .Site.Params.cv }}<li class="navigation__item"><a href="{{ .Site.Params.cv  }}" title="link to my CV " class="blog-button">CV</a> </li></br> {{ end }}
                                 {{ if .Site.Params.legalnotice }}<li class="navigation__item"><a href="{{ .Site.Params.legalnotice  }}" title="link to the legal notice " class="blog-button">Legal notice</a> </li></br> {{ end }}
                            </ul>
-                        </nav> {{ partial "social.html" . }} </div>
+                        </nav>
+                        {{ partial "social.html" . }}
+                    </div>
+                    {{ if .Site.Copyright }}<p class="panel-cover__copyright">{{ .Site.Copyright }}</p>{{ end }}
                 </div>
             </div>
             <div class="panel-cover--overlay"></div>

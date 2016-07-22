@@ -251,10 +251,9 @@ pre {
 
 .footer {
   display: block;
-  padding: 2em 0 0 0;
-  border-top: 2px solid $gray-light;
-  font-size: .7em;
-  color: lighten($gray-dark, 10%);
+  font-size: 0.8em;
+  color: #FFF;
+  z-index: 901;
 }
 
   .footer__copyright {
