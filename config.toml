@@ -1,13 +1,15 @@
-baseurl = "https://mm-git.github.io"
+baseurl = "https://mm-git.github.io/"
 languageCode = "en-us"
 title = "CODE HOUSE"
 author = "Motoyasu Meguro"
 copyright = "&copy; 2016 code-house.jp"
 theme = "hugo-uno"
 canonifyurls = true
+pygmentscodefences = true
+pygmentsstyle = "solarizedlight"
 
 [Params]
-description = "I'm Motoyasu, freelance software engineer."
+description = "I'm Motoyasu, a freelance software engineer."
 github = "mm-git"
 facebook = "motoyasu.meguro"
 linkedin = "meguro"
