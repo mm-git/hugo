@@ -1,12 +1,10 @@
-box: debian 
+box: python:2.7-slim
 build:
   steps:
-    - script:
-        name: apt-get
-        code: apt-get update
-    - script:
-        name: install git
-        code: apt-get install git -y
+    - install-packages:
+        packages: git
+    - pip-install:
+        packages_list: "pygments-style-solarized"
     - script:
         name: initialize git submodules
         code: git submodule update --init
