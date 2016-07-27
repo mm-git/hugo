@@ -1,7 +1,7 @@
 baseurl = "https://code-house.jp/"
 languageCode = "en-us"
 title = "CODE HOUSE"
-author = "Motoyasu Meguro"
+author = "CODE HOUSE"
 copyright = "Powered by Hugo. Copyright © 2016 code-house.jp"
 theme = "hugo-uno"
 canonifyurls = true
@@ -10,7 +10,7 @@ pygmentscodefences = true
 pygmentsstyle = "solarizedlight"
 
 [Params]
-description = "I'm Motoyasu, a freelance software engineer."
+description = "Hello, I'm a freelance software engineer."
 github = "mm-git"
 facebook = "motoyasu.meguro"
 linkedin = "meguro"
