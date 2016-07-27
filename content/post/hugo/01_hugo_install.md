@@ -57,4 +57,4 @@ theme = "hugo-uno"    << テーマをここで指定しておく
 hugo server
 ```
 
-<img title="hugo-uno" src="https://goo.gl/2ZJ5m5" alt="hugo-uno" />
+<img title="hugo-uno" src="https://goo.gl/ynu35b" alt="hugo-uno" />
