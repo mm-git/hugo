@@ -1,0 +1,22 @@
+{
+  "name": "hugo",
+  "version": "1.0.0",
+  "description": "hugo",
+  "scripts": {
+    "sass": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm-git/hugo.git"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "require-dir": "^0.3.0"
+  }
+}

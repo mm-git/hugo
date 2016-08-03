@@ -41,5 +41,5 @@ title = "github pagesについて"
 
 User siteでは、gitgub pagesの元になるファイル群と、実際に公開するファイル群でそれぞれ別のリポジトリを作成するのがいいと思われる。
 (試してはいないが、元ファイルをmaster以外、公開ファイルをmasterにすれば、１つのリポジトリでも運用できるかもしれない)
-具体的にHugoでこのサイトを公開している私の場合、 [mm-git/hugo](https://github.com/mm-git/hugo "mm-git/hugo")に元ファイルを置いている。そしてHugoが生成したpublicフォルダを[mm-git/mm-git.github.io](https://github.com/mm-git/mm-git.github.io "mm-git/mm-git.github.io")に置くようにしている。
+具体的にHugoでこのサイトを公開している私の場合、 [mm-git/hugo](https://github.com/mm-git/hugo)に元ファイルを置いている。そしてHugoが生成したpublicフォルダを[mm-git/mm-git.github.io](https://github.com/mm-git/mm-git.github.io)に置くようにしている。
 

@@ -8,6 +8,7 @@ canonifyurls = true
 hasCJKLanguage = true
 pygmentscodefences = true
 pygmentsstyle = "solarizedlight"
+PygmentsOptions = "linenos=table,nobackground=true"
 
 [Params]
 description = "Hello, I'm a freelance software engineer."
