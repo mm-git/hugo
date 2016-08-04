@@ -1,4 +1,4 @@
-box: mm-git/hugo-box@0.0.2
+box: mm-git/hugo-box:v0.0.2
 build:
   steps:
     - script:
