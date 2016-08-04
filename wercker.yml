@@ -1,11 +1,6 @@
-box: python:2.7-slim
+box: mm-git/hugo-box
 build:
   steps:
-    - install-packages:
-        packages: git
-    - pip-install:
-        requirements_file: ""
-        packages_list: "pygments-style-solarized"
     - script:
         name: initialize git submodules
         code: git submodule update --init
@@ -14,8 +9,6 @@ build:
         flags: --buildDrafts=false -v
 deploy:
   steps:
-    - install-packages:
-        packages: git ssh-client
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
         repo: mm-git/mm-git.github.io
