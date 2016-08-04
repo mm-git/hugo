@@ -1,4 +1,4 @@
-box: mm-git/hugo-box:v0.0.2
+box: mmgit/hugo-box
 build:
   steps:
     - script:
@@ -14,4 +14,3 @@ deploy:
         repo: mm-git/mm-git.github.io
         branch: master
         basedir: public
-
