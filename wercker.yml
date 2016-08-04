@@ -1,4 +1,4 @@
-box: mm-git/hugo-box
+box: wercker/hugo-box
 build:
   steps:
     - script:
