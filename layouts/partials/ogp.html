@@ -6,8 +6,8 @@
 
     {{ if eq .Section "" }}
         <meta property="og:description" content="{{ .Site.Params.description }}" />
-        <meta property="og:image" content="http://code-house.jp/open-graph.png">
-        <meta property="twitter:image" content="http://code-house.jp/twitter.png">
+        <meta property="og:image" content="https://code-house.jp/open-graph.png">
+        <meta property="twitter:image" content="https://code-house.jp/open-graph.png">
         <meta property="og:type" content="blog" />
     {{ else }}
         <meta property="og:description" content="{{ .Params.description }}" />
@@ -15,8 +15,8 @@
             <meta property="og:image" content="{{ .Params.image }}">
             <meta property="twitter:image" content="{{ .Params.image }}">
         {{ else }}
-            <meta property="og:image" content="http://code-house.jp/open-graph.png">
-            <meta property="twitter:image" content="http://code-house.jp/open-graph.png">
+            <meta property="og:image" content="https://code-house.jp/open-graph.png">
+            <meta property="twitter:image" content="https://code-house.jp/open-graph.png">
         {{ end }}
         <meta property="og:type" content="article" />
     {{ end }}
