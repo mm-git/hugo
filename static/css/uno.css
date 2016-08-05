@@ -2064,7 +2064,7 @@ pre {
     background: none;
     border: none; }
 
-pre + ul, blockquote + ul {
+pre + ul, pre + ol, blockquote + ul, blockquote + ol {
   margin-top: 1em; }
 
 .date,

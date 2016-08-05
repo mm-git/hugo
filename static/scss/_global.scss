@@ -294,7 +294,7 @@ pre {
 }
 
 pre, blockquote {
-  + ul {
+  + ul, + ol {
     margin-top: 1em;
   }
 }
