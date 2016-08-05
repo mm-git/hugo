@@ -4,6 +4,7 @@ draft = false
 slug = "gulpsetting"
 tags = ["node", "gulp"]
 title = "gulpの初期設定"
+description = "少し前まではgruntを使って、webサイトのファイルなどを動的に生成していた。しかしgulpの方が設定やgulpスクリプトがすっきり書けるということでgulpに移行した。nodeアプリやモジュールの作成でgulpを使う場合の初期設定について書いてみる。"
 
 +++
 
@@ -11,7 +12,7 @@ title = "gulpの初期設定"
 
 <a href="http://gulpjs.com/"><img title="gulp.js - the streaming build system" src="http://capture.heartrails.com/200x150/cool?http://gulpjs.com/" alt="http://gulpjs.com/" width="200" height="150" /></a>
 
-少し前まではgruntを使って、webサイトのファイルなどを動的に生成していた。しかしgulpの方が設定やgulpスクリプトがすっきり書けるということでgulpに以降した。
+少し前まではgruntを使って、webサイトのファイルなどを動的に生成していた。しかしgulpの方が設定やgulpスクリプトがすっきり書けるということでgulpに移行した。
 nodeアプリやモジュールの作成でgulpを使う場合の初期設定について書いてみる。なお下記を前提とする。
 
 - 設定、スクリプトはcoffeescriptで書く。

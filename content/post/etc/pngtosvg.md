@@ -4,6 +4,8 @@ draft = false
 slug = "pngtosvg"
 tags = ["png", "svg", "imagemagick", "potrace"]
 title = "透過pngをsvgに変換する"
+description = "pngをsvgに変換する。簡単にできるかと思っていたが、以外にもハマりどころが多かったのでメモ"
+
 +++
 ## 透過PNGをSVG画像に変換する。
 

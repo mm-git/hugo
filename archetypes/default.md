@@ -4,4 +4,6 @@ draft = true
 slug = ""
 tags = ["", ""]
 title = ""
+description = ""
+image = ""
 +++

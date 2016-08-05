@@ -4,6 +4,7 @@ draft = false
 slug = "GithubPages"
 tags = ["Hugo", "github"]
 title = "github pagesについて"
+description = "リポジトリの内容をそのままwebとして公開できるgithub pagesについて調べてみた。"
 
 +++
 

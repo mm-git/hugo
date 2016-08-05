@@ -1,0 +1,23 @@
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="{{ .Permalink }}" />
+
+    {{ if eq .Section "" }}
+        <meta property="og:description" content="{{ .Site.Params.description }}" />
+        <meta property="og:image" content="http://code-house.jp/open-graph.png">
+        <meta property="twitter:image" content="http://code-house.jp/twitter.png">
+        <meta property="og:type" content="blog" />
+    {{ else }}
+        <meta property="og:description" content="{{ .Params.description }}" />
+        {{ if and (.Params.image) (ne .Params.image "") }}
+            <meta property="og:image" content="{{ .Params.image }}">
+            <meta property="twitter:image" content="{{ .Params.image }}">
+        {{ else }}
+            <meta property="og:image" content="http://code-house.jp/open-graph.png">
+            <meta property="twitter:image" content="http://code-house.jp/open-graph.png">
+        {{ end }}
+        <meta property="og:type" content="article" />
+    {{ end }}
+

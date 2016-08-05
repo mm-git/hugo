@@ -4,6 +4,7 @@ draft = false
 slug = "HugoInsatallation"
 tags = ["Hugo"]
 title = "Hugoをinstallする"
+description = "githubでは、github pagesという仕組みを利用して、自分のサイトを公開する機能がある。今回Hugoを使ってこのサイトを作成してみた。"
 
 +++
 

@@ -4,6 +4,7 @@ draft = false
 slug = "googlephoto"
 tags = ["google", "photo"]
 title = "Google PhotoをBlogに貼り付ける"
+description = "Google Photoの画像をblogに表示する方法について書いてみる"
 
 +++
 

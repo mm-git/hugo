@@ -4,10 +4,13 @@ draft = false
 slug = "dockerhub"
 tags = ["docker", "github"]
 title = "docker hubにboxを登録する"
+description = "最近名前をよく聞くようになったdocker。Docker hubは、dockerで使うimageをクラウド上に置いておくことができる場所だ。今回、werckerの処理を高速化するためにdockerにimageを登録してみたので、その手順を書いておく。"
 
 +++
 
 ## docker hub
+
+<a href="https://hub.docker.com/"><img title="Untitled" src="http://capture.heartrails.com/200x150/cool/1470414919790?https://hub.docker.com/" alt="https://hub.docker.com/" width="200" height="150" /></a>
 
 最近名前をよく聞くようになったdocker。Docker hubは、dockerで使うimageをクラウド上に置いておくことができる場所だ。ざっくり説明すると、
 
