@@ -1,13 +1,11 @@
-<article class="post">
+<article class="summary_post summary_link" onClick="document.location.href = '{{ .Permalink }}'">
 <header>
-<h2 class="summary-title"><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
+<h2 class="summary-title">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}} </h2>
 <div class="post-meta">{{ .Date.Format "2006-01-02" }} - Read in {{ .ReadingTime }} Min </div>
 </header>
 <div class="summary">
-    {{ .Summary }}
+    {{ .Description }}
 </div>
 <footer>
-    <a href='{{ .Permalink }}' class="read-more"><nobr>Read more →</nobr></a>
-    <hr/>
 </footer>
 </article>

@@ -23,54 +23,99 @@
 
 }
 
-  .post-list__post-title {
-    margin-top: 0;
-    margin-bottom: .2em;
-    font-size: 1.5em;
-    line-height: 1.3em;
+.post-list__post-title {
+  margin-top: 0;
+  margin-bottom: .2em;
+  font-size: 1.5em;
+  line-height: 1.3em;
 
-    a {
-      color: $gray-darkest;
+  a {
+    color: $gray-darkest;
 
-      &:hover {
-        color: $hover-color;
-      }
-
+    &:hover {
+      color: $hover-color;
     }
 
   }
 
-  .post-list__meta {
-    display: block;
-    margin: .7em 0 0 0;
-    font-size: .9em;
+}
+
+.post-list__meta {
+  display: block;
+  margin: .7em 0 0 0;
+  font-size: .9em;
+  color: darken($gray, 2%);
+}
+
+  .post-list__meta--date {
+    margin-right: .5em;
+    margin-bottom: 1em;
     color: darken($gray, 2%);
   }
 
-    .post-list__meta--date {
-      margin-right: .5em;
-      margin-bottom: 1em;
-      color: darken($gray, 2%);
-    }
-
-    .post-list__meta--tags {
-      margin-left: .5em;
-    }
-
-  .post-list__divider {
-    width: 30%;
-    margin: 2.2em 0 2.1em 0;
-    border-top: 1px solid $gray-light;
+  .post-list__meta--tags {
+    margin-left: .5em;
   }
 
-  .summary{
-      margin-top: .2em;
-      margin-left: 1em;
-      margin-bottom: 1em;
-      font-size: 1em;
-      font-family: $sans-font;
+.post-list__divider {
+  width: 30%;
+  margin: 2.2em 0 2.1em 0;
+  border-top: 1px solid $gray-light;
+}
+
+.summary{
+    margin: .2em 1em 1em 1em;
+    font-size: 1em;
+    font-family: $sans-font;
+}
+
+.read-more {
+  margin-left: 2em;
+}
+
+.article_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+
+article {
+}
+
+.summary_link {
+  cursor: pointer;
+}
+
+.summary_post {
+  width: 235px;
+  min-height: 280px;
+  padding: 8px;
+  box-shadow:3px 2px 8px -1px #bcc2c0;
+  border-radius: 4px;
+
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: $sans-font;
+
+  h2 {
+    margin-top: 0.2em;
+    font-size: 2em;
+    font-weight: lighter;
+    color: $link-color;
+    border: none;
   }
 
-  .read-more {
-    margin-left: 2em;
+  h3 {
+    font-size: 1em;
   }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

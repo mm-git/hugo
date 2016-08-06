@@ -7,16 +7,26 @@
   margin: 0 0 4em 0;
 }
 
-  .pagination__page-number {
-    margin: 0;
-    font-size: .8em;
-    color: $gray-dark;
-  }
+.pagination__page-number {
+  width: 220px;
+  margin-top: 20px;
+  font-size: 3em;
+  color: $gray-dark;
+  text-align: center;
+}
 
-  .pagination__newer {
-    margin-right: 1em;
-  }
+.pagination__arrow {
+  width: 220px;
+  margin-top: 20px;
+  font-size: 3em;
+  text-align: center;
+}
 
-  .pagination__older {
-    margin-left: 1em;
-  }
+.disable_arrow {
+  color: $gray-lightest;
+}
+
+.archive {
+  width: 220px;
+  text-align: right;
+}

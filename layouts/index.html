@@ -4,17 +4,46 @@
         <div class="content-wrapper">
             <div class="content-wrapper__inner">
                 <section id="main">
-                    <div>
-                        {{ range first 10 .Data.Pages }}
-                            {{ if eq .Type  "post" }}
-                                {{ .Render "summary"}}
-                            {{ end }}
+                    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
+
+                    <div class="article_list">
+                        {{ range $paginator.Pages }}
+                            {{ .Render "summary"}}
                         {{ end }}
+
+                        {{ $dummy := seq (sub 5 $paginator.NumberOfElements) }}
+                        {{ range $dummy }}
+                        <article class="summary_post"></article>
+                        {{ end }}
+
+                        <article class="summary_post">
+                            <nav role="pagination">
+                                <div class="pagination__page-number">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</div>
+                                <div class="pagination__arrow">
+                                {{ if $paginator.HasPrev }}
+                                    {{ if eq $paginator.PageNumber 2 }}
+                                        <a href="{{ .Site.BaseURL }}#blog">&lt;&lt;&lt;</a>
+                                    {{ else }}
+                                        <a href="{{ $paginator.Prev.URL }}">&lt;&lt;&lt;</a>
+                                    {{ end }}
+                                {{ else}}
+                                    <span class="disable_arrow">&lt;&lt;&lt;</span>
+                                {{ end }}
+
+                                {{ if $paginator.HasNext }}
+                                    <a href="{{ $paginator.Next.URL }}">&gt;&gt;&gt;</a>
+                                {{ else}}
+                                    <span class="disable_arrow">&gt;&gt;&gt;</span>
+                                {{ end }}
+                                </div>
+                            </nav>
+                            <div class="archive">
+                                <h4>
+                                    <a href="{{ .Site.BaseURL }}/post/">Archive</a>
+                                </h4>
+                            </div>
+                        </article>
                     </div>
-                    </br>
-                    <h4>
-                        <a href="{{ .Site.BaseURL }}/post/">Archive</a>
-                    </h4>
                 </section>
             </div>
         </div>
