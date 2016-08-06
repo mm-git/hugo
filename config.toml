@@ -1,5 +1,5 @@
 baseurl = "https://code-house.jp/"
-languageCode = "en-us"
+languageCode = "ja_jp"
 title = "CODE HOUSE"
 author = "CODE HOUSE"
 copyright = "Powered by Hugo. Copyright © 2016 code-house.jp"
