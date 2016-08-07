@@ -2820,6 +2820,12 @@ nav {
   .archive {
     width: 340px; } }
 
+@media all and (max-width: 414px) {
+  .highlighttable td:first-child {
+    width: 8%; }
+  .highlighttable td:last-child {
+    width: 92%; } }
+
 @media all and (max-width: 340px) {
   .panel-main__inner {
     padding: 0 5%; }
