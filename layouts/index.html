@@ -6,14 +6,13 @@
                 <section id="main">
                     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
 
+                    <script>
+                        document.write(window.innerWidth);
+                    </script>
+
                     <div class="article_list">
                         {{ range $paginator.Pages }}
                             {{ .Render "summary"}}
-                        {{ end }}
-
-                        {{ $dummy := seq (sub 5 $paginator.NumberOfElements) }}
-                        {{ range $dummy }}
-                        <article class="summary_post"></article>
                         {{ end }}
 
                         <article class="summary_post">

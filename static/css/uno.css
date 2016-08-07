@@ -2111,7 +2111,7 @@ pre + ul, pre + ol, blockquote + ul, blockquote + ol {
   margin-left: 25%; }
 
 .content-wrapper__inner {
-  margin: 0 5%;
+  margin: 0 3%;
   padding: 15px 0; }
 
 .footer {
@@ -2574,14 +2574,14 @@ nav {
   margin: 0 0 4em 0; }
 
 .pagination__page-number {
-  width: 220px;
+  width: 235px;
   margin-top: 20px;
   font-size: 3em;
   color: #999999;
   text-align: center; }
 
 .pagination__arrow {
-  width: 220px;
+  width: 235px;
   margin-top: 20px;
   font-size: 3em;
   text-align: center; }
@@ -2697,7 +2697,19 @@ nav {
     font-size: .9em; }
   .navigation--social {
     margin-top: 5px;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .summary_post {
+    width: 200px; }
+    .summary_post h2 {
+      font-size: 1.7em; }
+  .pagination__page-number {
+    font-size: 2.5em;
+    width: 200px; }
+  .pagination__arrow {
+    font-size: 2.5em;
+    width: 200px; }
+  .archive {
+    width: 180px; } }
 
 @media all and (max-width: 960px) {
   .btn-mobile-menu {
@@ -2770,7 +2782,7 @@ nav {
         display: inline-block;
         width: 25.8%; }
   .content-wrapper {
-    width: 80%;
+    width: 95%;
     max-width: none;
     margin: 0 auto; }
   .content-wrapper__inner {
@@ -2779,6 +2791,28 @@ nav {
   .navigation__item {
     width: 100%;
     margin: 0 0 .4em 0; } }
+
+@media all and (max-width: 768px) {
+  .summary_post {
+    width: 260px;
+    min-height: 200px; }
+  .pagination__page-number {
+    width: 260px; }
+  .pagination__arrow {
+    width: 260px; }
+  .archive {
+    width: 240px; } }
+
+@media all and (max-width: 730px) {
+  .summary_post {
+    width: 360px;
+    min-height: 200px; }
+  .pagination__page-number {
+    width: 360px; }
+  .pagination__arrow {
+    width: 360px; }
+  .archive {
+    width: 340px; } }
 
 @media all and (max-width: 340px) {
   .panel-main__inner {
