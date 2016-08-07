@@ -15,6 +15,8 @@ body {
   font-family: $sans-font;
   font-size: 1em;
   color: $gray-darker;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 ::selection {
@@ -209,13 +211,14 @@ h5 {
 .highlighttable {
   width: 100%;
   margin-bottom: 1.3em;
+  table-layout: fixed;
 
   tr {
     border-bottom-right-radius: $border-radius;
   }
 
   td:first-child {
-    width: 30px;
+    width: 4%;
 
     pre {
       background: lighten($secondary-color, 24%);
@@ -224,6 +227,8 @@ h5 {
   }
 
   td:last-child {
+    width: 96%;
+
     pre {
       border-bottom-right-radius: $border-radius;
     }
@@ -231,6 +236,7 @@ h5 {
 
   pre {
     width: 97% !important;
+    overflow: auto;
   }
 }
 

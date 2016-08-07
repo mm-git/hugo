@@ -1858,7 +1858,9 @@ html {
 body {
   font-family: "Ubuntu", sans-serif;
   font-size: 1em;
-  color: #666666; }
+  color: #666666;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
 
 ::-moz-selection {
   background: #979dbd; }
@@ -2005,18 +2007,22 @@ h5 {
 
 .highlighttable {
   width: 100%;
-  margin-bottom: 1.3em; }
+  margin-bottom: 1.3em;
+  table-layout: fixed; }
   .highlighttable tr {
     border-bottom-right-radius: 3px; }
   .highlighttable td:first-child {
-    width: 30px; }
+    width: 4%; }
     .highlighttable td:first-child pre {
       background: #c5dff6;
       border-bottom-left-radius: 3px; }
-  .highlighttable td:last-child pre {
-    border-bottom-right-radius: 3px; }
+  .highlighttable td:last-child {
+    width: 96%; }
+    .highlighttable td:last-child pre {
+      border-bottom-right-radius: 3px; }
   .highlighttable pre {
-    width: 97% !important; }
+    width: 97% !important;
+    overflow: auto; }
 
 .linenodiv {
   padding: 0 !important;
