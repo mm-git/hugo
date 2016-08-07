@@ -5,11 +5,7 @@
             <div class="content-wrapper__inner">
                 <section id="main">
                     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
-
-                    <script>
-                        document.write(window.innerWidth);
-                    </script>
-
+                    
                     <div class="article_list">
                         {{ range $paginator.Pages }}
                             {{ .Render "summary"}}
