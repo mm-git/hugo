@@ -3,35 +3,37 @@
             <i class="fa fa-bars btn-mobile-menu__icon"></i>
             <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
     </span>
-    <header class="
-        {{ if .IsNode }}
-            {{ if or (eq .URL "#blog") (eq .URL "/post/") (eq .URL "/page/") (in .URL "/tags/") (in .URL "/categories/") }}
-                panel-cover panel-cover--collapsed
-            {{ else }}
-                    panel-cover
-            {{ end }}
-        {{ else }}
-            panel-cover panel-cover--collapsed
-        {{ end }}" {{ if .Site.Params.cover }} style="background-image: url({{ .Site.Params.cover }})" {{ end }}>
+    {{ if .IsHome }}
+    <header class="panel-cover">
+    {{ else }}
+    <header class="panel-cover panel-cover--collapsed">
+    {{ end }}
     <div class="panel-main">
         <div class="panel-main__inner panel-inverted">
-            <div class="panel-main__content"> {{ if .Site.Params.logo }}
-                <a href="{{ .Site.BaseURL }}" title="link to homepage for {{ .Site.Title }}"> <img src="{{ .Site.Params.logo }}" width="100" alt="{{ .Site.Title }} logo" class="panel-cover__logo" /> </a> {{ end }}
+            <div class="panel-main__content">
+                {{ if .Site.Params.logo }}
+                <a href="{{ .Site.BaseURL }}" title="link to homepage for {{ .Site.Title }}">
+                    <img src="{{ .Site.Params.logo }}" width="100" alt="{{ .Site.Title }} logo" class="panel-cover__logo" />
+                </a>
+                {{ end }}
                 <h1 class="panel-cover__title panel-title">
                     <a href="{{ .Site.BaseURL }}"  title="link to homepage for {{ .Site.Title }}">{{ .Site.Title }}</a>
                 </h1>
                 <hr class="panel-cover__divider" />
-                <p class="panel-cover__description"> {{ if .Site.Params.description }} {{ .Site.Params.description }} {{ else }} This site is built using <a href="http://gohugo.io">hugo</a> and the theme is built by <a href="http://fredrikloch.me">Fredrik</a> if you enjoy it, it is available at <a href="https://github.com/SenjinDarashiva/hugo-uno">github</a> {{end}} </p>
+                {{ if .Site.Params.description }}<p class="panel-cover__description">{{ .Site.Params.description }}</p>{{ end }}
                 <hr class="panel-cover__divider panel-cover__divider--secondary" />
                 <div class="navigation-wrapper">
                     <nav class="cover-navigation cover-navigation--primary">
                         <ul class="navigation">
-                            <li class="navigation__item"><a href="{{ .Site.BaseURL }}#blog" title="link to {{ .Site.Title }} blog" class="blog-button">Blog</a> </li></br>
-                            {{ if .Site.Params.cv }}<li class="navigation__item"><a href="{{ .Site.Params.cv  }}" title="link to my CV " class="blog-button">CV</a> </li></br> {{ end }}
-                            {{ if .Site.Params.legalnotice }}<li class="navigation__item"><a href="{{ .Site.Params.legalnotice  }}" title="link to the legal notice " class="blog-button">Legal notice</a> </li></br> {{ end }}
-                       </ul>
+                            <li class="navigation__item"><a href="{{ .Site.BaseURL }}/work" title="link to {{ .Site.Title }} work" class="blog-button">Work</a> </li>
+                            <li class="navigation__item"><a href="{{ .Site.BaseURL }}/blog" title="link to {{ .Site.Title }} blog" class="blog-button">Blog</a> </li>
+
+                            {{ if .Site.Params.cv }}<li class="navigation__item"><a href="{{ .Site.Params.cv  }}" title="link to my CV " class="blog-button">CV</a> </li> {{ end }}
+                            {{ if .Site.Params.legalnotice }}<li class="navigation__item"><a href="{{ .Site.Params.legalnotice  }}" title="link to the legal notice " class="blog-button">Legal notice</a> </li> {{ end }}
+                        </ul>
                     </nav>
-                    <br/> {{ partial "social.html" . }}
+                    <br>
+                    {{ partial "social.html" . }}
                 </div>
                 {{ if .Site.Copyright }}<p class="panel-cover__copyright">{{ .Site.Copyright }}</p>{{ end }}
             </div>
@@ -49,7 +51,7 @@
         }
     </style>
 
-    <header class="panel-cover panel-cover--collapsed" style="background-image: url({{ .Site.Params.cover }})">
+    <header class="panel-cover panel-cover--collapsed">
         <div class="panel-main">
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content"> {{ if .Site.Params.logo }}
@@ -63,12 +65,13 @@
                     <div class="navigation-wrapper">
                         <nav class="cover-navigation cover-navigation--primary">
                             <ul class="navigation">
-                                <li class="navigation__item"><a href="{{ .Site.BaseURL }}#blog" title="link to {{ .Site.Title }} blog" class="blog-button">Blog</a> </li></br>
-                                {{ if .Site.Params.cv }}<li class="navigation__item"><a href="{{ .Site.Params.cv  }}" title="link to my CV " class="blog-button">CV</a> </li></br> {{ end }}
-                                {{ if .Site.Params.legalnotice }}<li class="navigation__item"><a href="{{ .Site.Params.legalnotice  }}" title="link to the legal notice " class="blog-button">Legal notice</a> </li></br> {{ end }}
-                           </ul>
+                                <li class="navigation__item"><a href="{{ .Site.BaseURL }}/work" title="link to {{ .Site.Title }} work" class="blog-button">Work</a> </li>
+                                <li class="navigation__item"><a href="{{ .Site.BaseURL }}/blog" title="link to {{ .Site.Title }} blog" class="blog-button">Blog</a> </li>
+                                {{ if .Site.Params.cv }}<li class="navigation__item"><a href="{{ .Site.Params.cv  }}" title="link to my CV " class="blog-button">CV</a> </li> {{ end }}
+                                {{ if .Site.Params.legalnotice }}<li class="navigation__item"><a href="{{ .Site.Params.legalnotice  }}" title="link to the legal notice " class="blog-button">Legal notice</a> </li> {{ end }}
+                            </ul>
                         </nav>
-                        {{ partial "social.html" . }}
+                        <br>{{ partial "social.html" . }}
                     </div>
                     {{ if .Site.Copyright }}<p class="panel-cover__copyright">{{ .Site.Copyright }}</p>{{ end }}
                 </div>

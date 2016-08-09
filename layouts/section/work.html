@@ -4,6 +4,13 @@
         <div class="content-wrapper">
             <div class="content-wrapper__inner">
                 <section id="main">
+                    <div class="article_list">
+                        {{ range .Data.Pages }}
+                            {{ if eq .Type "work" }}
+                                {{ .Render "summary"}}
+                            {{ end }}
+                        {{ end }}
+                    </div>
                 </section>
             </div>
         </div>

@@ -15,5 +15,12 @@ description = "Hello, I'm a freelance software engineer."
 github = "mm-git"
 facebook = "motoyasu.meguro"
 linkedin = "meguro"
-cover = "/images/background.jpg"
 logo = "/images/codehouse_logo.png"
+
+[taxonomies]
+tags = "tags"
+archive = "archive"
+
+[permalinks]
+blog = "/:year/:month/:day/:slug/"
+work = "/work/:year/:slug"

@@ -1,0 +1,44 @@
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "sidebar.html" . }}
+        <div class="content-wrapper">
+            <div class="content-wrapper__inner">
+                <section id="main">
+                    {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 5 }}
+                    
+                    <div class="article_list">
+                        {{ range $paginator.Pages }}
+                            {{ .Render "summary"}}
+                        {{ end }}
+
+                        <article class="summary_post">
+                            <nav role="pagination">
+                                <div class="pagination__page-number">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</div>
+                                <div class="pagination__arrow">
+                                {{ if $paginator.HasPrev }}
+                                    <a href="{{ $paginator.Prev.URL }}">&lt;&lt;&lt;</a>
+                                {{ else}}
+                                    <span class="disable_arrow">&lt;&lt;&lt;</span>
+                                {{ end }}
+
+                                {{ if $paginator.HasNext }}
+                                    <a href="{{ $paginator.Next.URL }}">&gt;&gt;&gt;</a>
+                                {{ else}}
+                                    <span class="disable_arrow">&gt;&gt;&gt;</span>
+                                {{ end }}
+                                </div>
+                            </nav>
+                            <div class="archive">
+                                <h4>
+                                    <a href="{{ .Site.BaseURL }}/archive/">Archive</a>
+                                </h4>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+        {{ partial "footer.html" .}}
+        {{ partial "script.html" .}}
+    </body>
+</html>

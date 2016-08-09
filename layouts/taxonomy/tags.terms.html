@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+<body>
+    {{ partial "sidebar.html" . }}
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <section id="main">
+              <div>
+                <h1 id="title">{{ .Title }}</h1>
+                <ul id="tags_list">
+                {{ range $key, $value := .Data.Terms }}
+                    <li>
+                        <a href="{{ $key | urlize }}">{{ $key }}</a> {{ len $value }}
+                    </li>
+                {{ end }}
+                </ul>
+              </div>
+            </section>
+            </div>
+        </div>
+    </body>
+    {{ partial "script.html" .}}
+</html>
