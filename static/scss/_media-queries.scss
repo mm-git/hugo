@@ -267,10 +267,10 @@
 @media all and (max-width: 414px) {
   .highlighttable {
     td:first-child {
-      width: 8%;
+      width: 8% !important;
     }
     td:last-child {
-      width: 92%;
+      width: 92% !important;
     }
   }
 }

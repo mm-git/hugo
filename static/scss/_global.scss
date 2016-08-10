@@ -208,38 +208,6 @@ h5 {
   border-top-right-radius: $border-radius;
 }
 
-.highlighttable {
-  width: 100%;
-  margin-bottom: 1.3em;
-  table-layout: fixed;
-
-  tr {
-    border-bottom-right-radius: $border-radius;
-  }
-
-  td:first-child {
-    width: 4%;
-
-    pre {
-      background: lighten($secondary-color, 24%);
-      border-bottom-left-radius: $border-radius;
-    }
-  }
-
-  td:last-child {
-    width: 96%;
-
-    pre {
-      border-bottom-right-radius: $border-radius;
-    }
-  }
-
-  pre {
-    width: 97% !important;
-    overflow: auto;
-  }
-}
-
 .linenodiv {
   padding: 0 !important;
   background-color: transparent !important;
@@ -351,10 +319,10 @@ pre, blockquote {
   margin-left: 25%;
 }
 
-  .content-wrapper__inner {
-    margin: 0 3%;
-    padding: 15px 0;
-  }
+.content-wrapper__inner {
+  margin: 0 3%;
+  padding: 15px 0;
+}
 
 .footer {
   display: block;
@@ -363,21 +331,21 @@ pre, blockquote {
   z-index: 901;
 }
 
-  .footer__copyright {
-    display: block;
-    margin-bottom: .7em;
+.footer__copyright {
+  display: block;
+  margin-bottom: .7em;
 
-    a {
-      color: lighten($gray-dark, 5%);
-      text-decoration: underline;
+  a {
+    color: lighten($gray-dark, 5%);
+    text-decoration: underline;
 
-      &:hover {
-        color: $hover-color;
-      }
-
+    &:hover {
+      color: $hover-color;
     }
 
   }
+
+}
 
 // ------------------------------
 // AVATAR & LOGO

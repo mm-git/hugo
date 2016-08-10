@@ -1,0 +1,25 @@
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "sidebar.html" . }}
+        <div class="content-wrapper">
+            <div class="content-wrapper__inner">
+                <section id="main">
+                    <div class="tags_list">
+                    <div class="tags_title"><span>{{ .Title }}</span></div>
+                    </div>
+                    <ul id="list">
+                        {{ range .Data.Pages }}
+                        <li>
+                            {{ .Date.Format "2006-01-02" }}
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    <hr>
+                    <a href="{{ .Site.BaseURL }}/tags">Tags</a>
+                </section>
+            </div>
+        </div>
+    </body>
+    {{ partial "script.html" .}}
+</html>

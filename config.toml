@@ -18,8 +18,8 @@ linkedin = "meguro"
 logo = "/images/codehouse_logo.png"
 
 [taxonomies]
-tags = "tags"
-archive = "archive"
+tag = "tags"
+archive = "archives"
 
 [permalinks]
 blog = "/:year/:month/:day/:slug/"
