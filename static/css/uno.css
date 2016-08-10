@@ -2113,7 +2113,7 @@ pre + ul, pre + ol, blockquote + ul, blockquote + ol {
 .content-wrapper {
   z-index: 800;
   width: 75%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin-left: 25%; }
 
 .content-wrapper__inner {
@@ -2678,8 +2678,9 @@ nav {
   cursor: pointer; }
 
 .summary_post {
+  position: relative;
   width: 235px;
-  min-height: 280px;
+  min-height: 235px;
   padding: 8px;
   box-shadow: 3px 2px 8px -1px #bcc2c0;
   border-radius: 4px;
@@ -2699,9 +2700,25 @@ nav {
   .summary_post a {
     text-decoration: none; }
 
+.post_image_frame {
+  opacity: 0.8;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 4px; }
+
+.post_image {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  margin: auto; }
+
 @media all and (min-width: 1300px) {
   .content-wrapper {
-    margin-left: 350px; } }
+    margin-left: 25%; } }
 
 @media all and (max-width: 1100px) {
   .panel-cover__logo {
@@ -2717,7 +2734,8 @@ nav {
     margin-top: 5px;
     margin-left: 0; }
   .summary_post {
-    width: 200px; }
+    width: 200px;
+    min-height: 200px; }
     .summary_post h2 {
       font-size: 1.7em; }
   .pagination__page-number {
@@ -2814,6 +2832,8 @@ nav {
   .summary_post {
     width: 260px;
     min-height: 200px; }
+  .sumary_work {
+    min-height: 260px; }
   .pagination__page-number {
     width: 260px; }
   .pagination__arrow {
@@ -2825,6 +2845,8 @@ nav {
   .summary_post {
     width: 360px;
     min-height: 200px; }
+  .sumary_work {
+    min-height: 360px; }
   .pagination__page-number {
     width: 360px; }
   .pagination__arrow {
