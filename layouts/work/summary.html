@@ -1,11 +1,13 @@
 <article class="summary_post summary_link sumary_work" onClick="document.location.href = '{{ .Permalink }}'">
 <header>
 </header>
-<div class="summary">
-</div>
 <footer>
 </footer>
 <div class="post_image_frame">
-<img src="{{ .Params.image }}" class="post_image">
+    {{ if .Params.landscape }}
+    <img src="{{ .Params.image }}" class="post_image post_image_landscape">
+    {{ else }}
+    <img src="{{ .Params.image }}" class="post_image">
+    {{ end }}
 </div>
 </article>

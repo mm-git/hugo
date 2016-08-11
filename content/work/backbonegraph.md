@@ -3,6 +3,7 @@ date = "2016-08-10T10:30:21+09:00"
 description = "nodeで使える折れ線グラフ描画モジュール"
 draft = false
 image = "https://goo.gl/V5p3Ag"
+landscape = false
 slug = "backbonegraph"
 tags = ["node", "backbone", "html5", "canvas"]
 title = "NODE.JS BACKBONE-GRAPH"

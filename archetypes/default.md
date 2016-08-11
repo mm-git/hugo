@@ -6,4 +6,5 @@ tags = ["", ""]
 title = ""
 description = ""
 image = ""
+landscape = true
 +++
