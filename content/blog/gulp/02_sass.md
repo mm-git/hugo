@@ -68,6 +68,7 @@ autoprefixer = require('gulp-autoprefixer')
 cssmin = require('gulp-cssmin')
 rename = require('gulp-rename')
 plumber = require('gulp-plumber')
+config = require('../config')
 
 gulp.task 'sass', ->
   sassFiles = fs.readdirSync(config.src + '/scss')
