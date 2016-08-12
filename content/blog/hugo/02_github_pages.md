@@ -3,7 +3,7 @@ date = "2016-07-26T12:21:20+09:00"
 draft = false
 slug = "GithubPages"
 tags = ["Hugo", "github"]
-title = "github pagesについて"
+title = "[Hugo] github pagesについて"
 description = "リポジトリの内容をそのままwebとして公開できるgithub pagesについて調べてみた。"
 
 +++

@@ -3,7 +3,7 @@ date = "2016-07-26T11:38:58+09:00"
 draft = false
 slug = "HugoInsatallation"
 tags = ["Hugo"]
-title = "Hugoをinstallする"
+title = "[Hugo] Hugoをinstallする"
 description = "githubでは、github pagesという仕組みを利用して、自分のサイトを公開する機能がある。今回Hugoを使ってこのサイトを作成してみた。"
 
 +++

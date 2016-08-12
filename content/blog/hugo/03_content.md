@@ -3,7 +3,7 @@ date = "2016-08-09T13:38:22+09:00"
 draft = false
 slug = "hugoContent"
 tags = ["Hugo", "markdown"]
-title = "Hugoの記事について"
+title = "[Hugo] Hugoの記事について"
 description = "Hugoでの記事の追加の仕方とそのPermalinkの決定方法について"
 
 +++
