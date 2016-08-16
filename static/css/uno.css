@@ -1902,9 +1902,6 @@ h1 {
 h2 {
   font-size: 2.0em; }
 
-.post h2:first-of-type {
-  margin-top: 0.8em; }
-
 h3 {
   font-size: 1.7em; }
 
@@ -1913,6 +1910,9 @@ h4 {
 
 h5 {
   font-size: 1em; }
+
+.post h2:first-of-type {
+  margin-top: 0.8em; }
 
 .post h2 {
   font-size: 2.0em;
@@ -1962,19 +1962,18 @@ blockquote {
   font-style: italic;
   width: 90%;
   quotes: "“" "”" "‘" "’"; }
+  blockquote :before {
+    color: #DDDDDD;
+    content: "\201C";
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em; }
   blockquote p {
     padding-left: 1em;
     margin: 0 !important; }
 
 p + blockquote {
   margin-top: -0.7em; }
-
-blockquote:before {
-  color: #DDDDDD;
-  content: "\201C";
-  font-size: 4em;
-  line-height: 0.1em;
-  vertical-align: -0.4em; }
 
 ol, ul {
   margin: 0 0 1.3em 2.5em; }
@@ -2349,6 +2348,11 @@ hr {
     .post table.highlighttable pre {
       width: 97% !important;
       overflow: auto; }
+
+.post strong {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: red; }
 
 .tags_list {
   display: -webkit-box;
