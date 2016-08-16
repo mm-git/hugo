@@ -12,7 +12,7 @@ title = "NODE.JS BACKBONE-GRAPH"
 
 <img src="https://goo.gl/V5p3Ag">
 
-自作webアプリの再利用できそうな部分を初めてnode.jsのモジュールにしてみた。
+自作webアプリの再利用できそうな部分を初めてnode.jsのモジュールにしてみました。
 
 [mm-git/backbone-graph](https://github.com/mm-git/backbone-graph)
 

@@ -10,6 +10,8 @@ description = "CODE HOUSE LOGOを作成しました"
 
 +++
 
+CODE HOUSE LOGOを作成しました。githubには`CC BY-ND 4.0`として登録しています。
+
 <img src="/open-graph.png">
 
 [mm-git/logos](https://github.com/mm-git/logos)
