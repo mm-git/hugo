@@ -133,8 +133,9 @@ em {
 }
 
 blockquote {
+  position: relative;
   margin-left: 2em;
-  padding: 0.5em 0;
+  padding: 1.0em 0;
   background: $gray-lightest;
   border-left: 10px solid $gray-dark;
   border-radius: $border-radius;
@@ -150,6 +151,10 @@ blockquote {
     font-size: 4em;
     line-height: 0.1em;
     vertical-align: -0.4em;
+    position: absolute;
+    top: 0.3em;
+    left: -0.1em;
+    z-index: 1;
   }
 
   p {

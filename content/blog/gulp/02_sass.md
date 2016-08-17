@@ -7,7 +7,7 @@ title = "[gulp] sass編"
 description = "sass記法で書かれた`.scss`ファイルを、`.css`に変換し圧縮して`.min.css`ファイルにも変換する。"
 +++
 
-## gulp を使った sass→css, css.min変換
+## gulp を使った sass→css, min.css変換
 
 <a href="http://sass-lang.com/"><img title="Sass: Syntactically Awesome Style Sheets" src="http://capture.heartrails.com/200x150/cool?http://sass-lang.com/" alt="http://sass-lang.com/" width="200" height="150" /></a>
 
@@ -59,7 +59,7 @@ npm i fs gulp-sass gulp-autoprefixer gulp-cssmin gulp-rename gulp-plumber -D`
 
 ### sass.coffee
 
-##### gulp/taks/sass.coffee
+##### gulp/tasks/sass.coffee
 ```coffee
 fs = require('fs')
 gulp = require('gulp')
