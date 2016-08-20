@@ -2,7 +2,7 @@
 date = "2016-08-20T19:30:57+09:00"
 description = "HugoでSyntax Highlightを使ってみる。また、配色をSolarizedにしてみる。"
 draft = false
-image = ""
+image = "https://goo.gl/H565BV"
 landscape = true
 slug = "hugosyntaxhighlight"
 tags = ["Hugo", "Pygments", "Solarized"]
@@ -11,6 +11,8 @@ title = "[Hugo] Syntax highlight"
 +++
 
 ## Hugoでソースコードを綺麗に表示する
+
+<img src="https://goo.gl/H565BV" width="50%">
 
 このサイトは特にたくさんのソースコードを記事に載せているが、ソースコードを綺麗に色付きで表示するには、HugoのSyntax hightlight機能を有効にする必要がある。しかし、**Syntax Highlight機能をONにするだけで簡単に実現できなかった**ので記事にしておこうと思う。
 さらに、Syntax Highlightの配色として**Solarized**を使いたかったのだが、これがそのままでは未対応だった。少し工夫が必要だったのでそれも書いておく。
