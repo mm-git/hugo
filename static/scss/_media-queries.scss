@@ -299,3 +299,26 @@
     margin-bottom: .4em;
   }
 }
+
+
+// ------------------------------
+// > 800px
+// ------------------------------
+
+@media all and (min-width: 800px) {
+  ins.adsbygoogle{
+    width: 728px !important;
+    height:90px !important;
+  }
+}
+
+// ------------------------------
+// > 1280px
+// ------------------------------
+
+@media all and (min-width: 1360px) {
+  ins.adsbygoogle{
+    width: 960px !important;
+    height:90px !important;
+  }
+}

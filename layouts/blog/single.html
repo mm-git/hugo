@@ -11,7 +11,9 @@
           </div>
           {{ end }}
           <p class="post-date">{{ .Date.Format "2006-01-02" }}</p>
+          {{ partial "articletopads" }}
           {{ .Content }}
+          {{ partial "bottomads" }}
         </div>
         {{ partial "sharing.html" .}}
         {{ partial "comments.html" .}}

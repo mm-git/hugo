@@ -4,9 +4,14 @@
         <div class="content-wrapper">
             <div class="content-wrapper__inner">
                 <section id="main">
-                    {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 5 }}
+                    {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 4 }}
                     
                     <div class="article_list">
+
+                        <article class="summary_post">
+                        {{ partial "listads" }}
+                        </article>
+
                         {{ range $paginator.Pages }}
                             {{ .Render "summary"}}
                         {{ end }}
@@ -35,6 +40,7 @@
                             </div>
                         </article>
                     </div>
+                    {{ partial "bottomads" }}
                 </section>
             </div>
         </div>

@@ -6,6 +6,7 @@
             <section id="main">
                 <div>
                 <h1 id="title">{{ .Title }}</h1>
+                    {{ partial "articletopads" }}
                     <div>
                     {{ range .Site.Pages.GroupByDate "2006-01"}}
                         <div class="archive_list">
@@ -21,6 +22,7 @@
                         </div>
                     {{ end }}
                     </div>
+                    {{ partial "bottomads" }}
                 </div>
             </section>
             </div>

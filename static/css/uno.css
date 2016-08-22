@@ -2967,3 +2967,13 @@ nav {
   .btn, .navigation__item a {
     display: block;
     margin-bottom: .4em; } }
+
+@media all and (min-width: 800px) {
+  ins.adsbygoogle {
+    width: 728px !important;
+    height: 90px !important; } }
+
+@media all and (min-width: 1360px) {
+  ins.adsbygoogle {
+    width: 960px !important;
+    height: 90px !important; } }
