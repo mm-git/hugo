@@ -2760,8 +2760,8 @@ nav {
 
 .summary_post {
   position: relative;
-  width: 235px;
-  min-height: 235px;
+  width: 250px;
+  min-height: 250px;
   padding: 8px;
   box-shadow: 3px 2px 8px -1px #bcc2c0;
   border-radius: 4px;
@@ -2841,7 +2841,10 @@ nav {
     font-size: 2.5em;
     width: 200px; }
   .archive {
-    width: 180px; } }
+    width: 180px; }
+  ins.listads {
+    width: 200px !important;
+    height: 200px !important; } }
 
 @media all and (max-width: 960px) {
   .btn-mobile-menu {
@@ -2935,7 +2938,10 @@ nav {
   .pagination__arrow {
     width: 260px; }
   .archive {
-    width: 240px; } }
+    width: 240px; }
+  ins.listads {
+    width: 250px !important;
+    height: 250px !important; } }
 
 @media all and (max-width: 730px) {
   .summary_post {
@@ -2948,7 +2954,10 @@ nav {
   .pagination__arrow {
     width: 360px; }
   .archive {
-    width: 340px; } }
+    width: 340px; }
+  ins.listads {
+    width: 250px !important;
+    height: 250px !important; } }
 
 @media all and (max-width: 630px) {
   .highlighttable td:first-child {
@@ -2969,11 +2978,11 @@ nav {
     margin-bottom: .4em; } }
 
 @media all and (min-width: 800px) {
-  ins.adsbygoogle {
+  ins.articletopads {
     width: 728px !important;
     height: 90px !important; } }
 
 @media all and (min-width: 1360px) {
-  ins.adsbygoogle {
+  ins.articletopads {
     width: 960px !important;
     height: 90px !important; } }
