@@ -40,8 +40,8 @@
   }
 
   .summary_post {
-    width: 200px;
-    min-height: 200px;
+    width: 250px;
+    min-height: 250px;
 
     h2 {
       font-size: 1.7em;
@@ -50,21 +50,16 @@
 
   .pagination__page-number {
     font-size: 2.5em;
-    width: 200px;
+    width: 250px;
   }
 
   .pagination__arrow {
     font-size: 2.5em;
-    width: 200px;
+    width: 250px;
   }
 
   .archive {
-    width: 180px;
-  }
-
-  ins.listads {
-    width: 200px !important;
-    height: 200px !important;
+    width: 230px;
   }
 }
 
@@ -237,11 +232,6 @@
     width: 240px;
   }
 
-  ins.listads {
-    width: 250px !important;
-    height: 250px !important;
-  }
-
 }
 
 // ------------------------------
@@ -270,10 +260,6 @@
     width: 340px;
   }
 
-  ins.listads {
-    width: 250px !important;
-    height: 250px !important;
-  }
 }
 
 // ------------------------------
@@ -313,28 +299,5 @@
   .btn {
     display: block;
     margin-bottom: .4em;
-  }
-}
-
-
-// ------------------------------
-// > 800px
-// ------------------------------
-
-@media all and (min-width: 800px) {
-  ins.articletopads{
-    width: 728px !important;
-    height:90px !important;
-  }
-}
-
-// ------------------------------
-// > 1280px
-// ------------------------------
-
-@media all and (min-width: 1360px) {
-  ins.articletopads{
-    width: 960px !important;
-    height:90px !important;
   }
 }

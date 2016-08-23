@@ -2812,6 +2812,9 @@ nav {
 .post_image_landscape {
   left: -50%; }
 
+.listads {
+  text-align: center; }
+
 @media all and (min-width: 1300px) {
   .content-wrapper {
     margin-left: 25%; } }
@@ -2830,21 +2833,18 @@ nav {
     margin-top: 5px;
     margin-left: 0; }
   .summary_post {
-    width: 200px;
-    min-height: 200px; }
+    width: 250px;
+    min-height: 250px; }
     .summary_post h2 {
       font-size: 1.7em; }
   .pagination__page-number {
     font-size: 2.5em;
-    width: 200px; }
+    width: 250px; }
   .pagination__arrow {
     font-size: 2.5em;
-    width: 200px; }
+    width: 250px; }
   .archive {
-    width: 180px; }
-  ins.listads {
-    width: 200px !important;
-    height: 200px !important; } }
+    width: 230px; } }
 
 @media all and (max-width: 960px) {
   .btn-mobile-menu {
@@ -2938,10 +2938,7 @@ nav {
   .pagination__arrow {
     width: 260px; }
   .archive {
-    width: 240px; }
-  ins.listads {
-    width: 250px !important;
-    height: 250px !important; } }
+    width: 240px; } }
 
 @media all and (max-width: 730px) {
   .summary_post {
@@ -2954,10 +2951,7 @@ nav {
   .pagination__arrow {
     width: 360px; }
   .archive {
-    width: 340px; }
-  ins.listads {
-    width: 250px !important;
-    height: 250px !important; } }
+    width: 340px; } }
 
 @media all and (max-width: 630px) {
   .highlighttable td:first-child {
@@ -2976,13 +2970,3 @@ nav {
   .btn, .navigation__item a {
     display: block;
     margin-bottom: .4em; } }
-
-@media all and (min-width: 800px) {
-  ins.articletopads {
-    width: 728px !important;
-    height: 90px !important; } }
-
-@media all and (min-width: 1360px) {
-  ins.articletopads {
-    width: 960px !important;
-    height: 90px !important; } }
