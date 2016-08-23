@@ -1915,6 +1915,11 @@ p {
   margin-bottom: 1.3em;
   line-height: 1.7em; }
 
+p.sponsorlink {
+  font-size: 0.8em;
+  margin-bottom: 0;
+  line-height: 0.8em; }
+
 strong {
   font-weight: bold; }
 
@@ -2434,6 +2439,7 @@ hr {
   font-size: 6em; }
 
 .sharing {
+  margin-top: 20px;
   border-top: 5px solid #DDDDDD;
   text-align: right; }
   .sharing a {
