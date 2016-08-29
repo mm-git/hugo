@@ -9,6 +9,7 @@ hasCJKLanguage = true
 pygmentscodefences = true
 pygmentsstyle = "solarizedlight"
 PygmentsOptions = "linenos=table,nobackground=true"
+paginate = 5
 
 [Params]
 description = "Hello, I'm a freelance software engineer."
@@ -16,6 +17,10 @@ github = "mm-git"
 facebook = "motoyasu.meguro"
 linkedin = "meguro"
 logo = "/images/codehouse_logo.png"
+ads_cover = false
+ads_top = false
+ads_bottom = false
+ads_list = false
 
 [taxonomies]
 tag = "tags"

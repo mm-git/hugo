@@ -68,11 +68,11 @@
 // ------------------------------
 
 @media all and (max-width: 960px) {
-
+/*
   .btn-mobile-menu {
     display: block;
   }
-
+*/
   .panel-main {
     display: table;
     position: relative;
@@ -86,6 +86,11 @@
   .panel-main__inner {
     display: table-cell;
     padding: 60px 10%;
+  }
+
+  .panel-cover__title {
+    font-size: 1.4em;
+    line-height: 1.2em;
   }
 
   .panel-cover__description {
@@ -112,7 +117,7 @@
 
       .panel-main__inner {
         display: block;
-        padding: 70px 0 30px 0;
+        padding: 5px 0 20px;
       }
 
       .panel-cover__logo {
@@ -136,7 +141,7 @@
     }
 
   }
-
+/*
   .navigation-wrapper {
     display: none;
     position: fixed;
@@ -151,7 +156,6 @@
     &.visible {
       display: block;
     }
-
   }
 
   .cover-navigation {
@@ -187,7 +191,7 @@
     }
 
   }
-
+*/
   .content-wrapper {
     width: 95%;
     max-width: none;
@@ -198,13 +202,23 @@
     margin-right: 0;
     margin-left: 0;
   }
-
+/*
   .navigation__item {
     width: 100%;
     margin: 0 0 .4em 0;
   }
+*/
+  .cover-navigation--primary {
+    .navigation__item {
+      font-size: 0.8em;
 
+      a {
+        padding: 8px 16px;
+      }
+    }
+  }
 }
+
 
 // ------------------------------
 // < 768px

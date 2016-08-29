@@ -1,8 +1,4 @@
 <div id="scriptHeader">
-    <span class="mobile btn-mobile-menu">
-            <i class="fa fa-bars btn-mobile-menu__icon"></i>
-            <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
-    </span>
     {{ if .IsHome }}
     <header class="panel-cover">
     {{ else }}
@@ -16,14 +12,14 @@
                     <img src="{{ .Site.Params.logo }}" width="100" alt="{{ .Site.Title }} logo" class="panel-cover__logo" />
                 </a>
                 {{ end }}
-                <h1 class="panel-cover__title panel-title">
+                <p class="panel-cover__title panel-title">
                     <a href="{{ .Site.BaseURL }}"  title="link to homepage for {{ .Site.Title }}">{{ .Site.Title }}</a>
-                </h1>
+                </p>
                 <hr class="panel-cover__divider" />
                 {{ if .Site.Params.description }}<p class="panel-cover__description">{{ .Site.Params.description }}</p>{{ end }}
                 <hr class="panel-cover__divider panel-cover__divider--secondary" />
                 <div class="navigation-wrapper">
-                    <nav class="cover-navigation cover-navigation--primary">
+                    <nav class="cover-n avigation cover-navigation--primary">
                         <ul class="navigation">
                             <li class="navigation__item"><a href="{{ .Site.BaseURL }}/work" title="link to {{ .Site.Title }} work" class="blog-button">Work</a> </li>
                             <li class="navigation__item"><a href="{{ .Site.BaseURL }}/blog" title="link to {{ .Site.Title }} blog" class="blog-button">Blog</a> </li>
@@ -35,7 +31,6 @@
                     <br>
                     {{ partial "social.html" . }}
                 </div>
-                <p> </p>
                 {{ partial "testads.html" . }}
                 {{ if .Site.Copyright }}<p class="panel-cover__copyright">{{ .Site.Copyright }}</p>{{ end }}
             </div>

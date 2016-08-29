@@ -14,6 +14,9 @@
 }
 
 .panel-title {
+  font-family: $serif-font;
+  font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
   margin: 0 0 5px 0;
   font-size: 2.5em;
   letter-spacing: 4px;
