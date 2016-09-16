@@ -3,7 +3,7 @@ date = "2016-08-29T16:18:22+09:00"
 description = "Google Map/Open street map。これらは256×256の画像をタイル上に並べることで地図の表示を実現している。この記事では座標からタイルの番号を求める方法について書く"
 draft = false
 slug = "maptilenumber"
-tags = ["google", "map"]
+tags = ["google", "map", "OpenStreetMap"]
 title = "[GoogleMap] 表示のしくみ"
 
 +++
