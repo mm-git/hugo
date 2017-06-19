@@ -2,7 +2,7 @@
 slug = "altitudeareajson"
 draft = false
 date = "2017-06-15T09:36:37+09:00"
-description = ""
+description = "標高エリアデータのjsonを作成する"
 title = "[WORK] 標高エリアデータのjsonを作成する"
 tags = ["altitude","json","javascript"]
 
