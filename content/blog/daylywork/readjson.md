@@ -48,7 +48,7 @@ area = {
 上記処理のコード部分を抜粋して下記に置いておきます。
 
 ##### AltitudeService.js(一部抜粋)
-```ES6
+```javascript
 class AltitudeService {
   _prepareArea() {
     let areaJson = require('./altfilter.json');
